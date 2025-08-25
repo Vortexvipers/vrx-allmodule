@@ -4,7 +4,7 @@
 
 # vrx-allmodule
 
-Base module sederhana untuk Node.js, berisi wrapper `fetch`, `axios`, dan fungsi `hello`.
+Module Yang Menyediakan Beberapa Module Yang Di Perlukan Sekaligus Tanpa Menginstal Yang Lain Nya.
 
 ## 📦 Install
 
