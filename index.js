@@ -43,11 +43,17 @@ const EventEmitter = require("events");
 
 const cheerio = require("cheerio");
 const jsdom = require("jsdom");
+
 let puppeteer = null;
 let playwright = null;
-if (!isTermux) {
-  puppeteer = require("puppeteer");
-  playwright = require("playwright");
+try {
+  if (!isTermux) {
+    puppeteer = require("puppeteer");
+    playwright = require("playwright");
+  }
+} catch (e) {
+  puppeteer = null;
+  playwright = null;
 }
 
 const chalk = require("chalk");
